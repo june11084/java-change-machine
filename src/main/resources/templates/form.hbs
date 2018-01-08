@@ -1,0 +1,19 @@
+{{#partial "title" }}
+    Change Machine
+{{/partial}}
+
+<!--form.hbs.-->
+{{#partial "content"}}
+
+    <h1>Fill in your name and your friend's name to create your custom greeting!</h1>
+    <form action='/changeMachine'>
+        <div class="form-group">
+            <label for="sender">Money that you have:</label>
+            <input id="cashInput" name="cashInput" class="form-control" type="number">
+        </div>
+        <button type="submit" class="btn">Go!</button>
+    </form>
+    <!--form.hbs.-->
+{{/partial}}
+
+{{> layout.hbs}}
